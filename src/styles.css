@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+declarando uma variavel de cores no root (quando ja se tem definido a cor do site, declare-as como variaveis
+*/
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+/*
+declarando regras para resetar o css
+"*" executa a regra pra toda estrutura
+*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
