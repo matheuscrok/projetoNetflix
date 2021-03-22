@@ -47,7 +47,7 @@ justify-contente sempre segue a direção do flex direction
 .filme-principal{
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRev5A9sF9nuMQvAOwZjCFhkedqW0eQUx-K1s3AEYgRsi-CjfaGNa4B3DovEohqpHCoInU&usqp=CAU');
-    height: 400px;
+    height: 500px;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -89,8 +89,25 @@ distanciar botoes da descrição
     width: 60%;
 }
 
-.box-filme{
-    height: 100%;
-    width: 100%;
-    display: block;
+.botoes i{
+    margin-right: 15px;
 }
+
+/** media query para deixar a pagina responsiva**/
+@media screen and (max-width: 700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+}
+@media screen and (min-width: 1000px){
+    .descricao{
+        width: 50%;
+    }
+}
+
